@@ -16,9 +16,9 @@ const Navbar = () => {
 
     </div>
     <header className="navbar">
-      <div className="logo">
-        <img src="/assets/Logo-green.png" alt="Ausrah-Logo" />
-      </div>
+      <a href="#" className="logo">
+        <img src="/assets/Logo Green.png" alt="Ausrah-Logo" />
+      </a>
       <div
         className={`menu-toggle ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}

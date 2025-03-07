@@ -64,7 +64,7 @@ const Landing = () => {
         <div class="container">
           <div className="hero-data">
           <div className="Hero-text">
-            <h1>معًا نحــــــو زراعة أكثر إنتاجًا وأمانًا</h1>
+            <h1>معًا نحـــــــو زراعة أكثر إنتاجًا وأمانًا</h1>
             <p>مع خبرة وجودة لضمان أفضل النتائج</p>
             <div className="btns">
               <a className="btn-green" href="#about-sec">أعرف أكتر</a>
@@ -73,6 +73,12 @@ const Landing = () => {
             </div>
           <img src="/assets/Hero-image.png" alt="" />
           </div>
+
+        </div>
+    </section>
+      <section class="about-section">
+        <div class="container">
+          <div className=""></div>
 
         </div>
     </section>
