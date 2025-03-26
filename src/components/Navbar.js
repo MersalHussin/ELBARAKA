@@ -66,6 +66,15 @@ const Navbar = () => {
             الأسئلة الشائعة
           </a>
         </li>
+        <li>
+          <a
+            href="#FAQ"
+            className={activeLink === "#FAQ" ? "active" : ""}
+            onClick={() => handleLinkClick("#FAQ")}
+          >
+ موقعنا
+          </a>
+        </li>
       </ul>
       <a
         className="contact-us"
