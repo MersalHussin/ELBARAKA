@@ -1,0 +1,7 @@
+.uploadFiles{
+  text-align: center;
+  color: var(--main--color);
+}
+.uploadFiles img{
+  max-width: 600px;
+}

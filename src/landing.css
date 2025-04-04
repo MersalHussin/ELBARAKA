@@ -63,7 +63,7 @@ header {
   font-size: 30px;
   padding: 20px;
   border-radius: 50%;
-  background-color: var(--pink--color);
+  background-color: var(--main--color);
   z-index: 999;
   width: 50px;
   height: 50px;
@@ -74,16 +74,15 @@ header {
   transition: 0.3s;
 }
 .whatsapp-btn:hover i{
-  color: var(--pink--color);
+  color: var(--main--color);
   background-color: white;
-  border: 2px solid var(--pink--color);
+  border: 2px solid var(--main--color);
 
 }
 .title{
   color: var(--main--color);
   font-size:40px;
   position: relative;
-  width: 300px;
   margin: auto;
   text-align: center;
 }
@@ -104,14 +103,10 @@ header {
 }
 .title:hover::after{
   content: "";
-  background:url('/public/assets/Title-line.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 200px;
-  transform: rotate(180deg);
-  left: 50px;
+  left: 50%;
+  transform: translateX(-50%) scale(1.1);
   top: 40px;
-
+z-index: -1;
   
 }
 
@@ -174,7 +169,7 @@ header {
 
 .hero-section .container .Hero-text h1{
  font-size: 60px;
- font-weight: 700;
+ font-weight: 800;
 }
 .hero-section .container .Hero-text p{
  font-size: 25px;
@@ -330,6 +325,8 @@ color: white;
 .vision-section{
   background-color: var(--main--color);
   padding: 100px 20px;
+  border-radius:  0 0 200px  0;
+  overflow: hidden;
 }
 .vision-section::after{
   content: "";
@@ -337,6 +334,7 @@ color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -352,26 +350,19 @@ color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200px;
-  width: 200px;
-  height: 100px;
-  position: absolute;
-  top: 40px;
-  z-index: 9;
+  content: "";
   left: 50%;
-  transform:translateX(-50%) ;
-  transition: 0.3s;
+  transform: translateX(-50%) scale(1.1);
+  top: 40px;
+z-index: -1;
 }
 
 .vision-section .title:hover::after{
   content: "";
-  background:url('/public/assets/Title-line-white.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 200px;
-  transform: rotate(180deg);
-  left: 50px;
+  transform: translateX(-50%) scale(1.1);
+  left: 50%;
   top: 40px;
-
+  z-index: -1;
 }
 .vision-section .vision-txt{
   color: white;
@@ -380,9 +371,16 @@ color: white;
   padding: 100px 20px 20px;
   text-align: right;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+@media(  width < 1040px ){
+  .vision-section .vision-txt{
+    font-size: 18px;
+  }
 }
 /* End Vison Sec */
+
 /* Start About Timeline Sec */
 .about-section.timeline .about-txt span{
 color: var(--main--color);
@@ -399,7 +397,7 @@ font-size: 20px;
 .products-section{
   padding: 100px 0px ;
   background-color: #f8f8f8;
-  border-radius: 0 0 200px 200px;
+  border-radius: 200px 0 0 0;
 }
 .products-section .container{
   padding: 100px 20px 20px;
@@ -602,10 +600,11 @@ padding: 50px 20px;
 }
 
 .faq-item {
-  border-bottom: 1px solid #ddd;
-  background-color: #f8f8f8;
+  box-shadow: 10px 0  10px rgba(0, 0, 0, 0.082);
+  background-color: #F8F9FA;
   transition: 0.3s;
   margin-bottom: 20px;
+  transition: 0.3s;
 }
 
 .faq-item:last-child {
@@ -621,6 +620,8 @@ padding: 50px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
+
 }
 
 .faq-question:hover {
@@ -638,6 +639,18 @@ padding: 50px 20px;
   color: #555;
   line-height: 1.5;
   background-color: #f9f9f9;
+}
+
+
+.FAQ-ul {
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #535353;
+}
+.FAQ-ul li{
+  list-style: disc !important;
+  list-style-type: disc !important;
 }
 
 @media (  width < 1020px ){
@@ -678,8 +691,7 @@ padding: 50px 20px;
 }
 
 .map-container {
-  border: 2px solid #009245;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
   margin: 0 auto;
   max-width: 800px;
@@ -688,17 +700,30 @@ padding: 50px 20px;
 .map-container iframe {
   width: 100%;
   height: 450px;
-  border: none;
+  border: 5px solid #009245 !important;
+  border-radius: 5px;
 }
+
 /* End Map  */
 
 
 /* Start Footer */
 .footer {
-  background-color: #009245;
+  background-color: var(--main--color);
   color: white;
-  padding: 30px 0;
-  margin-top: 50px;
+padding-top: 20px;
+  margin-top: 150px;
+  position: relative;
+}
+.footer::after {
+  content: "";
+  background:url("/public/assets/Footer-design.svg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  z-index: -1;
 }
 
 .footer-container {
@@ -717,11 +742,22 @@ padding: 50px 20px;
   margin-bottom: 20px;
 }
 
-.footer-contact p {
+.footer-contact a {
   margin: 5px 0;
   direction: ltr;
   text-align: left;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.footer-contact a i{
+  font-size: 20px;
+margin:5px;
+transition: 0.3s;
+}
+.footer-contact a:hover i{
+  transform: scale(1.2);
 }
 
 .footer-logo {
@@ -751,13 +787,22 @@ padding: 50px 20px;
   list-style: none;
 }
 .footer-links .links-container{
-
   display: flex;
   justify-content: start;
   align-items: center;
 flex-wrap: wrap;
 gap: 10px;
 max-width: 250px;
+}
+@media (max-width: 768px) {
+  .footer-links .links-container{
+    justify-content: center;
+    text-align: right;
+  }
+  .footer-contact a{
+    direction: ltr !important;
+    text-align: center ;
+  }
 }
 .footer-links ul li {
   margin-bottom: 8px;
@@ -772,6 +817,26 @@ max-width: 250px;
 .footer-links ul li a:hover {
   text-decoration: underline;
 }
+.footer .developer {
+  background-color: white;
+  width: 320px;
+  margin: auto;
+  padding: 20px 5px 20px;
+  text-align: center;
+  border-radius: 100px 100px 0 0;
+  transition: 0.3s;
+}
+.footer .developer:hover {
+  background-color: var(--dark--color);
+}
+.footer .developer:hover a {
+  color: white;
+}
+.footer .developer a {
+  color: var(--main--color);
+  font-weight: bold;
+}
+
 
 /* تجاوب مع الشاشات الصغيرة */
 @media (max-width: 768px) {
@@ -780,8 +845,10 @@ max-width: 250px;
       align-items: center;
       text-align: center;
   }
-  
-  .footer-contact p {
+  .footer-logo{
+    order: -1;
+  }
+  .footer-contact a {
       text-align: center;
       direction: rtl;
   }

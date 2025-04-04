@@ -1,0 +1,86 @@
+.fertilizer-banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  direction: rtl;
+  padding-top: 20px;
+  background:linear-gradient(#00a351d0, #00a351d0), url("/public/assets/Image-Background.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+/* Content container */
+.banner-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  z-index: 99;
+}
+
+/* Main heading */
+.banner-title {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.breadcrumb-link:hover {
+  color: white;
+}
+
+.breadcrumb-separator {
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg); /* Flip the chevron for RTL */
+}
+
+.breadcrumb-current {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--main--color);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.75rem;
+  }
+}

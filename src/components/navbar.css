@@ -43,7 +43,7 @@ body {
 }
 
 .nav-size{
-  height: 30px;
+  height: 40px;
 }
 header.navbar {
   position: fixed !important;
@@ -88,6 +88,11 @@ padding-top: 5px;
   transition: color 0.3s ease;
   font-weight: bold;
 }
+.nav-list a i {
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
 .nav-list a.active {
   color: var(--main--color);
   position: relative;
@@ -102,6 +107,7 @@ padding-top: 5px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+  z-index: -1;
 }
 
 @media (width < 700px){
@@ -144,7 +150,7 @@ padding-top: 5px;
     position: absolute;
     top: 80px;
     right: 0;
-    background:linear-gradient(0deg , #008896,#007380);
+    background:linear-gradient(0deg , var(--main--color),var(--main--color), var(--yellow--color) 98%);
     flex-direction: column;
     width: 100%;
     transform: translateY(-100%);
@@ -161,8 +167,8 @@ padding-top: 5px;
   }
   
   .menu-toggle.active span  {
-    color: var(--pink--color);
-    background-color: var(--pink--color);
+    color: var(--dark--color);
+    background-color: var(--dark--color);
   }
   
 
@@ -175,9 +181,15 @@ padding-top: 5px;
   .nav-list a{
     color:white !important;
   }
+  .nav-list .mega-menu .mega-menu-item{
+    color: var(--dark--color)!important;
+  }
+  .nav-list .mega-menu .mega-menu-item:hover{
+    color: white !important;
+  }
 }
 .contact-us{
-  background-color: var(--pink--color); ;
+  background-color: var(--main--color); ;
   padding: 10px 15px;
   border-radius: 10px;
   color:white !important;
@@ -185,7 +197,7 @@ padding-top: 5px;
   transition: 0.3s;
 }
 .contact-us:hover{
-  background-color: var(--main--color) ;
+  background-color: var(--yellow--color) ;
   padding: 10px 15px;
   border-radius: 10px;
   color:white !important;
@@ -207,3 +219,72 @@ padding-top: 5px;
 
 
 
+/* Mega Menu *//* ضبط الحاوية التي تحتوي على القائمة الفرعية */
+.has-mega-menu {
+  position: relative;
+}
+
+/* تنسيق القائمة المنسدلة */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  right: 40px;
+  width: 200px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  border-radius: 10px 0 10px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  border: 3px solid var(--dark--color);
+  overflow: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+
+/* إظهار القائمة عند تمرير الماوس */
+.has-mega-menu:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.has-mega-menu:hover i {
+  transform: rotate(180deg);
+}
+
+
+.has-mega-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* تنسيق كل عنصر داخل القائمة */
+.mega-menu-item {
+  padding: 10px 15px;
+  /* border-radius: 10px 0 0 0; */
+  text-align: center;
+  color: var(--dark--color) !important;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(241, 241, 241);
+}
+.mega-menu-item.active {
+background-color: var(--dark--color);
+color: white !important;
+}
+.mega-menu-item.active::after {
+content: "";
+display: none;
+}
+
+/* تأثير عند تمرير الماوس فوق العنصر */
+.mega-menu-item:hover {
+  background: var(--main--color);
+  color: white !important;
+}
