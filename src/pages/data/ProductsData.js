@@ -2,6 +2,7 @@ export const fertilizersData = [
   {
     id:1,
     name: "جرين ماس",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "نيتروجين كلي (N2O)": "19%",
       "فوسفور (P2O5)": "19%",
@@ -24,6 +25,8 @@ export const fertilizersData = [
   {
     id:2,
     name: "جرين ماس VIP",
+    img:"/assets/الأسمدة 1.jpg",
+
     composition: {
       "نيتروجين كلي (N2O)": "9%",
       "فوسفور (P2O5)": "53%",
@@ -49,6 +52,7 @@ export const fertilizersData = [
   {
     id:3,
     name: "ملجراند ماب",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "نيتروجين (N)": "12%",
       "فوسفور (P2O5)": "61%"
@@ -71,6 +75,7 @@ export const fertilizersData = [
   {
     id:4,
     name: "ميثوفاك",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "نيتروجين (N2O)": "10%",
       "فوسفور (P2O5)": "5%",
@@ -95,6 +100,7 @@ export const fertilizersData = [
   {
     id:5,
     name: "جولدن فاك",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "فوسفور (P2O5)": "33%",
       "بوتاسيوم (K2O)": "44%",
@@ -121,6 +127,7 @@ export const fertilizersData = [
   {
     id:6,
     name: "جراند سايز",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "بوتاسيوم (K2O)": "36%",
       "كبريت (S)": "25%"
@@ -147,6 +154,7 @@ export const fertilizersData = [
   {
     id:7,
     name: "ملجراند نتروكال",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "نيتروجين": "15.5%",
       "كالسيوم": "18.5%"
@@ -159,13 +167,14 @@ export const fertilizersData = [
       "ينشط الأنسجة المريستيمية ويشجع نمو وامتداد الجذور.",
       "يحافظ على بنية التربة ويقلل خطر التملح."
     ],
-    usageRates: "2-3 كجم/فدان",
+    usageRates:  "2-3 كجم/فدان",
     mixing: "يقبل الخلط مع معظم أنواع الأسمدة والمبيدات ماعدا الفوسفات والكبريت، ويفضل التجربة قبل الخلط.",
     registrationNumber: "27093"
   },
   {
     id:8,
     name: "هيومي مارك",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "بوتاسيوم": "10% (مصدره هيومات بوتاسيوم)"
     },
@@ -187,6 +196,7 @@ export const fertilizersData = [
   {
     id:9,
     name: "فوسفوريك البركة",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "حامض الفوسفوريك": "85%"
     },
@@ -199,13 +209,14 @@ export const fertilizersData = [
       "خال من المعادن الثقيلة.",
       "يستخدم لتنظيف الرشاشات وخراطيم التنقيط."
     ],
-    usageRates: "2-3 لتر/فدان",
+    usageRates:"2-3 لتر/فدان",
     mixing: "لا يخلط مع سلفات المغنيسيوم، الهيومك، نترات الكالسيوم. يفضل التجربة قبل الخلط.",
     registrationNumber: "14740/1"
   },
   {
     id:10,
     name: "هانفوهيوميت",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "بوتاسيوم": "12% (مصدره هيومات بوتاسيوم 85%)"
     },
@@ -226,6 +237,7 @@ export const fertilizersData = [
   {
     id:11,
     name: "بي كال جي",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "ماغنيسيوم": "3%",
       "بورون": "0.5%",
@@ -241,7 +253,7 @@ export const fertilizersData = [
       "يساعد في مقاومة الظروف البيئية الصعبة.",
       "ينشط نمو وانتشار الجذور."
     ],
-    usageRates: {
+    usageRatesExtra: {
       "الخضروات": {
         "الرش الورقي": "150-250 سم³/100 لتر",
         "التسميد": "1.5 لتر/فدان"
@@ -265,6 +277,7 @@ export const fertilizersData = [
   {
     id:12,
     name: "بروفاك",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "بورون": "15% (مصدره بورون إيثانول أمين)"
     },
@@ -285,6 +298,7 @@ export const fertilizersData = [
   {
     id:13,
     name: "ميكرو كومبي 2",
+    img:"/assets/الأسمدة 1.jpg",
     composition: {
       "زنك": "3%",
       "ماغنسيوم": "3%",
@@ -315,6 +329,7 @@ export const pgrsData = [
   {
     id:1,
     name: "فيرو روكيت",
+    img:"/assets/الأسمدة 1.jpg",
     type: "منظمات النمو",
     composition: [
       "Naphthyl Acetic Acid (NAA) 1%",
@@ -322,18 +337,19 @@ export const pgrsData = [
       "Folic Acid 1%",
       "Vitamins B1, B2, B6, B12"
     ],
-    usageRate: "75 – 100 سم / 100 لتر ماء",
+    usageRates: "75 – 100 سم / 100 لتر ماء",
     mixing: "يتوافق مع معظم الأسمدة والمبيدات ما عدا القلوية",
     registrationNumber: "7746 / 2022"
   },
   {
     id:2,
     name: "جبر سنت",
+    img:"/assets/الأسمدة 1.jpg",
     type: "منظمات النمو",
     composition: [
       "Gibberellic Acid (GA3) 10%"
     ],
-    usageRate: "25 – 50 جم / فدان",
+    usageRates: "25 – 50 جم / فدان",
     mixing: "يخلط مع أغلب المبيدات والأسمدة",
     registrationNumber: "8927 / 2023"
   }
