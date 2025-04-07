@@ -9,6 +9,7 @@ import Pesticides from "./pages/Pesticides";
 import Seeds from "./pages/Seeds";
 import Fertilizers from "./pages/Fertilizers";
 import PGR from "./pages/PGR";
+import ProductDetails from "./pages/components/ProductDetails";
 // 
 const App = () => {
   
@@ -25,10 +26,12 @@ const App = () => {
       <Navbar />
       <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/fertilizers" element={<Fertilizers />} />
+          <Route path="/fertilizers/:id" element={<ProductDetails />} />
           <Route path="/pesticides" element={<Pesticides />} />
           <Route path="/seeds" element={<Seeds />} />
-          <Route path="/fertilizers" element={<Fertilizers />} />
           <Route path="/pgr" element={<PGR />} />
+          <Route path="/pgr/:id" element={<ProductDetails />} />
         </Routes>
 <Footer/>
     </div>

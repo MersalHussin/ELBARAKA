@@ -13,9 +13,9 @@ const Landing = () => {
   };
 
   const cardsData = [
+    { id: 3, image: "/assets/3.png", title: "أسمدة", link: "/fertilizers" },
     { id: 1, image: "/assets/1.png", title: "مبيدات", link: "/pesticides" },
     { id: 2, image: "/assets/2.png", title: "بذور تقاوي", link: "/seeds" },
-    { id: 3, image: "/assets/3.png", title: "أسمدة", link: "/fertilizers" },
     { id: 4, image: "/assets/4.jpg", title: "منظمات نمو", link: "/pgr" },
   ];
 

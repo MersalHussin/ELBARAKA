@@ -18,13 +18,13 @@ function ProductsBanner(props) {
             الرئيسية
           </a>
           <span className="breadcrumb-separator">
-          <i class="fa-solid fa-caret-right"></i>
+          <i className="fa-solid fa-caret-right"></i>
           </span>
           <a href="/#products" className="breadcrumb-link">
             منتجاتنا
           </a>
           <span className="breadcrumb-separator">
-          <i class="fa-solid fa-caret-right"></i>
+          <i className="fa-solid fa-caret-right"></i>
           </span>
           <span className="breadcrumb-current">{props.title}</span>
         </div>
