@@ -29,7 +29,7 @@ function PGR() {
               <img src="./assets/الأسمدة 1.jpg" alt="Product-image" />
               <div className='product-info'>
                 <h1>{item.name}</h1>
-                {/* <p>{item.features.join(" ").slice(0, 80) + (item.features.join(" ").length > 50 ? "..." : "")}</p>  */}
+                <p>{item.features.join(" ").slice(0, 80) + (item.features.join(" ").length > 50 ? "..." : "")}</p> 
                 <Link to={`/pgr/${item.id}`}> المزيد</Link>  
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
-import { fertilizersData,pgrsData } from '../data/ProductsData';
+import { fertilizersData,pgrsData,pesticidesData,seedsData } from '../data/ProductsData';
 function ProductDetails(props) {
   const { id } = useParams();
   const location = useLocation();
@@ -18,7 +18,16 @@ function ProductDetails(props) {
   }else if (location.pathname.startsWith('/pgr')) {
     productType = 'pgrs';
     dataSource = pgrsData;
-  }else {
+  }
+  else if (location.pathname.startsWith('/pesticides')) {
+    productType = 'pesticides';
+    dataSource = pesticidesData;
+  }
+  else if (location.pathname.startsWith('/seeds')) {
+    productType = 'seeds';
+    dataSource = seedsData;
+  }
+  else {
     return <div>نوع المنتج غير معروف</div>;
   }
   const product = dataSource.find(item => item.id === parseInt(id));
@@ -27,8 +36,10 @@ if (!product) {
   }
   return (
     <>
-<div className='product-details-container'>
-      <div className='product-details'>
+        <div id='products'>
+
+<div className='product-details-page-container'>
+      <div className='product-details-page'>
         <div className='product-details-image'>
           <img 
             src={`${product.img}`} 
@@ -41,7 +52,7 @@ if (!product) {
           {/* التركيبة */}
           {product.composition && (
             <>
-              <h2>التركيبة:</h2>
+              <h2 className='details-info'>التركيبة:</h2>
               <ul>
                 {Array.isArray(product.composition)
                   ? product.composition.map((item, index) => (
@@ -57,7 +68,7 @@ if (!product) {
           {/* المميزات */}
           {product.features && (
             <>
-              <h2>المميزات:</h2>
+              <h2 className='details-info'>المميزات:</h2>
               <ul>
                 {product.features.map((feature, index) => (
                   <li key={index}>{feature}</li>
@@ -69,7 +80,7 @@ if (!product) {
 {/* معدلات الاستخدام (للأسمدة) */}
 {product.usageRates && (
             <>
-              <h2>معدلات الاستخدام:</h2>
+              <h2 className='details-info'>معدلات الاستخدام:</h2>
               {typeof product.usageRates === 'string' ? (
                 <p>يضاف بمعدل: {product.usageRates}</p>
               ) : (
@@ -88,7 +99,7 @@ if (!product) {
     {/* معدلات الاستخدام الإضافية (متداخلة) */}
     {product.usageRatesExtra && (
             <>
-              <h2>معدلات الاستخدام حسب المحصول:</h2>
+              <h2 className='details-info'>معدلات الاستخدام حسب المحصول:</h2>
               {Object.entries(product.usageRatesExtra).map(([cropType, rates], index) => (
                 <div key={index} className="crop-usage">
                   <h3>{cropType}</h3>
@@ -105,15 +116,22 @@ if (!product) {
           {/* معدل الزراعة (للبذور) */}
           {product.plantingRate && (
             <>
-              <h2>معدل الزراعة:</h2>
+              <h2 className='details-info'>معدل الزراعة:</h2>
               <p>{product.plantingRate}</p>
+            </>
+          )}
+          {/* فترة ما قبل الحصاد */}
+          {product.PHI && (
+            <>
+              <h2 className='details-info'>فترة ماقبل الحصاد:</h2>
+              <p>{product.PHI}</p>
             </>
           )}
 
           {/* الخلط */}
           {product.mixing && (
             <>
-              <h2>الخلط:</h2>
+              <h2 className='details-info'>الخلط:</h2>
               <p>{product.mixing}</p>
             </>
           )}
@@ -121,7 +139,7 @@ if (!product) {
           {/* رقم التسجيل */}
           {product.registrationNumber && (
             <>
-              <h2>رقم التسجيل:</h2>
+              <h2 className='details-info'>رقم التسجيل:</h2>
               <p>{product.registrationNumber}</p>
             </>
           )}
@@ -129,12 +147,13 @@ if (!product) {
           {/* النوع */}
           {product.type && (
             <>
-              <h2>النوع:</h2>
+              <h2 className='details-info'>النوع:</h2>
               <p>{product.type}</p>
             </>
           )}
         </div>
       </div>
+    </div>
     </div>
     </>
   )

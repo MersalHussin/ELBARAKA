@@ -29,7 +29,9 @@ const App = () => {
           <Route path="/fertilizers" element={<Fertilizers />} />
           <Route path="/fertilizers/:id" element={<ProductDetails />} />
           <Route path="/pesticides" element={<Pesticides />} />
+          <Route path="/pesticides/:id" element={<ProductDetails />} />
           <Route path="/seeds" element={<Seeds />} />
+          <Route path="/seeds/:id" element={<ProductDetails />} />
           <Route path="/pgr" element={<PGR />} />
           <Route path="/pgr/:id" element={<ProductDetails />} />
         </Routes>

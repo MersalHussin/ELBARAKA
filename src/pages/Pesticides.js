@@ -1,7 +1,7 @@
 import React from 'react'
 import "./products.css"
 import ProductsBanner from '../components/ProductsBanner'
-import { fertilizersData } from './data/ProductsData'
+import {  pesticidesData } from './data/ProductsData'
 import { Link, NavLink } from 'react-router-dom'
 
 function Pesticides() {
@@ -23,14 +23,14 @@ function Pesticides() {
           <NavLink to="/seeds">بذور التقاوي</NavLink>
         </div>
         <div className='products-container'>
-        {fertilizersData.map((item, index) => {
+        {pesticidesData.map((item, index) => {
           return (
             <div key={index} className='product'>
               <img src="./assets/الأسمدة 1.jpg" alt="Product-image" />
               <div className='product-info'>
                 <h1>{item.name}</h1>
-                <p>{item.features.join(" ").slice(0, 80) + (item.features.join(" ").length > 50 ? "..." : "")}</p> 
-                <Link to={`/fertilizers/${item.id}`}> المزيد</Link>  
+                <p>{item.features.join(" ").slice(0, 70) + (item.features.join(" ").length > 50 ? "..." : "")}</p> 
+                <Link to={`/pesticides/${item.id}`}> المزيد</Link>  
               </div>
             </div>
           )

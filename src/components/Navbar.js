@@ -81,7 +81,7 @@ const Navbar = () => {
           <li className="has-mega-menu">
             <a
               href="/#products"
-              className={activeLink === "#products" ? "active" : ""}
+              className={activeLink === "#products"  ? "active" : ""}
               onClick={() => handleLinkClick("#products")}
             >
               منتجاتنا

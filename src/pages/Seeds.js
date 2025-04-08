@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductsBanner from '../components/ProductsBanner'
 import { Link, NavLink } from 'react-router-dom'
-import { fertilizersData } from './data/ProductsData'
+import { seedsData} from './data/ProductsData'
 
 function Seeds() {
   let Pagefor = "بذور التقاوي"
@@ -22,14 +22,14 @@ function Seeds() {
           <NavLink to="/seeds">بذور التقاوي</NavLink>
         </div>
         <div className='products-container'>
-        {fertilizersData.map((item, index) => {
+        {seedsData.map((item, index) => {
           return (
             <div key={index} className='product'>
               <img src="./assets/الأسمدة 1.jpg" alt="Product-image" />
               <div className='product-info'>
                 <h1>{item.name}</h1>
-                <p>{item.features.join(" ").slice(0, 80) + (item.features.join(" ").length > 50 ? "..." : "")}</p> 
-                <Link to={`/fertilizers/${item.id}`}> المزيد</Link>  
+                {/* <p>{item.features.join(" ").slice(0, 80) + (item.features.join(" ").length > 50 ? "..." : "")}</p>  */}
+                <Link to={`/seeds/${item.id}`}> المزيد</Link>  
               </div>
             </div>
           )
