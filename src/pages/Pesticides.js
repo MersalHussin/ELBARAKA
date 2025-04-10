@@ -26,7 +26,7 @@ function Pesticides() {
         {pesticidesData.map((item, index) => {
           return (
             <div key={index} className='product'>
-              <img src="./assets/الأسمدة 1.jpg" alt="Product-image" />
+              <img src={item.img} alt={item.name} />
               <div className='product-info'>
                 <h1>{item.name}</h1>
                 <p>{item.features.join(" ").slice(0, 70) + (item.features.join(" ").length > 50 ? "..." : "")}</p> 

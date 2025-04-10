@@ -2,7 +2,7 @@ export const fertilizersData = [
   {
     id:1,
     name: "جرين ماس",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/1.jpg",
     composition: {
       "نيتروجين كلي (N2O)": "19%",
       "فوسفور (P2O5)": "19%",
@@ -25,7 +25,7 @@ export const fertilizersData = [
   {
     id:2,
     name: "جرين ماس VIP",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/2.jpg",
 
     composition: {
       "نيتروجين كلي (N2O)": "9%",
@@ -52,7 +52,7 @@ export const fertilizersData = [
   {
     id:3,
     name: "ملجراند ماب",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/3.jpg",
     composition: {
       "نيتروجين (N)": "12%",
       "فوسفور (P2O5)": "61%"
@@ -75,7 +75,7 @@ export const fertilizersData = [
   {
     id:4,
     name: "ميثوفاك",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/4.jpg",
     composition: {
       "نيتروجين (N2O)": "10%",
       "فوسفور (P2O5)": "5%",
@@ -100,7 +100,7 @@ export const fertilizersData = [
   {
     id:5,
     name: "جولدن فاك",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/5.jpg",
     composition: {
       "فوسفور (P2O5)": "33%",
       "بوتاسيوم (K2O)": "44%",
@@ -127,7 +127,7 @@ export const fertilizersData = [
   {
     id:6,
     name: "جراند سايز",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/6.jpg",
     composition: {
       "بوتاسيوم (K2O)": "36%",
       "كبريت (S)": "25%"
@@ -154,7 +154,7 @@ export const fertilizersData = [
   {
     id:7,
     name: "ملجراند نتروكال",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/7.jpg",
     composition: {
       "نيتروجين": "15.5%",
       "كالسيوم": "18.5%"
@@ -174,7 +174,7 @@ export const fertilizersData = [
   {
     id:8,
     name: "هيومي مارك",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/8.jpg",
     composition: {
       "بوتاسيوم": "10% (مصدره هيومات بوتاسيوم)"
     },
@@ -196,7 +196,7 @@ export const fertilizersData = [
   {
     id:9,
     name: "فوسفوريك البركة",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/9.jpg",
     composition: {
       "حامض الفوسفوريك": "85%"
     },
@@ -216,7 +216,7 @@ export const fertilizersData = [
   {
     id:10,
     name: "هانفوهيوميت",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/10.jpg",
     composition: {
       "بوتاسيوم": "12% (مصدره هيومات بوتاسيوم 85%)"
     },
@@ -237,7 +237,7 @@ export const fertilizersData = [
   {
     id:11,
     name: "بي كال جي",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/11.jpg",
     composition: {
       "ماغنيسيوم": "3%",
       "بورون": "0.5%",
@@ -277,7 +277,7 @@ export const fertilizersData = [
   {
     id:12,
     name: "بروفاك",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/12.jpg",
     composition: {
       "بورون": "15% (مصدره بورون إيثانول أمين)"
     },
@@ -298,7 +298,7 @@ export const fertilizersData = [
   {
     id:13,
     name: "ميكرو كومبي 2",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/13.jpg",
     composition: {
       "زنك": "3%",
       "ماغنسيوم": "3%",
@@ -329,7 +329,7 @@ export const pgrsData = [
   {
     id: 1,
     name: "فيرو روكيت",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/ن1.jpg",
     composition: {
       "جبريلك اسيد (GA3)": "1.35%",
       "اندول استيك اسيد (IAA)": "1%",
@@ -355,7 +355,7 @@ export const pgrsData = [
   {
     id: 2,
     name: "جبر سنت",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/ن2.jpg",
     composition: {
       "جبريلك أسيد (GA3)": "10%"
     },
@@ -406,7 +406,7 @@ export const pesticidesData = [
   {
     id: 1,
     name: "الترابروك 5.7%",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/م1.jpg",
     composition: {
       "إمامكتين بنزوات": "5.7% (W/W)"
     },
@@ -426,7 +426,7 @@ export const pesticidesData = [
   {
     id: 2,
     name: "الترامون 48%",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/م2.jpg",
     composition: {
       "أزوكسي ستروبين": "8% (W/V)",
       "كلورثالونيل": "40% (W/V)"
@@ -447,7 +447,7 @@ export const pesticidesData = [
   {
     id: 3,
     name: "التراشوت 24%",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/م3.jpg",
     composition: {
       "أوكسي فلورفين": "24% (W/V)"
     },
@@ -468,7 +468,7 @@ export const pesticidesData = [
   {
     id: 4,
     name: "التراسينا 48%",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/م4.jpg",
     composition: {
       "جليفوسيت ايزوبروبيل أمونيوم": "48% (W/V)"
     },
@@ -492,21 +492,21 @@ export const seedsData = [
   {
     id: 1,
     name: "أرز أصناف مختلفة",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/ب1.jpg",
   },
   {
     id: 2,
     name: "قمح أصناف مختلفة",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/ب2.jpg",
   },
   {
     id: 3,
     name: "فول أصناف مختلفة ",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/ب3.jpg",
   },
   {
     id: 4,
     name: "برسيم مصري بلدي",
-    img:"/assets/الأسمدة 1.jpg",
+    img:"/assets/Products/ب4.jpg",
   }
 ];

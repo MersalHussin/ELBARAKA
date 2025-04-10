@@ -184,6 +184,9 @@ padding-top: 5px;
   .nav-list .mega-menu .mega-menu-item{
     color: var(--dark--color)!important;
   }
+  .nav-list .mega-menu .mega-menu-item.active{
+    color: white !important;
+  }
   .nav-list .mega-menu .mega-menu-item:hover{
     color: white !important;
   }

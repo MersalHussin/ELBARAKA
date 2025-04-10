@@ -45,6 +45,7 @@ if (!product) {
             src={`${product.img}`} 
             alt={`${product.name}-image`} 
           />
+          <a className='product-image-link' target='_blank' href={`https://wa.me/+201068063055?text= السلام عليكم كنت عاوز أستفسر عن منتج ${product.name}`} rel="noreferrer">أسأل عن المنتج</a>
         </div>
         <div className='product-details-text'>
           <h1>{product.name}</h1>
@@ -52,7 +53,7 @@ if (!product) {
           {/* التركيبة */}
           {product.composition && (
             <>
-              <h2 className='details-info'>التركيبة:</h2>
+              <h2 className='details-info'>التركيب:</h2>
               <ul>
                 {Array.isArray(product.composition)
                   ? product.composition.map((item, index) => (
@@ -68,7 +69,7 @@ if (!product) {
           {/* المميزات */}
           {product.features && (
             <>
-              <h2 className='details-info'>المميزات:</h2>
+              <h2 className='details-info'>المميزات والخصائص:</h2>
               <ul>
                 {product.features.map((feature, index) => (
                   <li key={index}>{feature}</li>
@@ -80,7 +81,7 @@ if (!product) {
 {/* معدلات الاستخدام (للأسمدة) */}
 {product.usageRates && (
             <>
-              <h2 className='details-info'>معدلات الاستخدام:</h2>
+              <h2 className='details-info'>معدل الاستخدام:</h2>
               {typeof product.usageRates === 'string' ? (
                 <p>يضاف بمعدل: {product.usageRates}</p>
               ) : (
@@ -124,7 +125,9 @@ if (!product) {
           {product.PHI && (
             <>
               <h2 className='details-info'>فترة ماقبل الحصاد:</h2>
-              <p>{product.PHI}</p>
+              <ul>
+              <li>{product.PHI}</li>
+              </ul>
             </>
           )}
 
@@ -139,8 +142,8 @@ if (!product) {
           {/* رقم التسجيل */}
           {product.registrationNumber && (
             <>
-              <h2 className='details-info'>رقم التسجيل:</h2>
-              <p>{product.registrationNumber}</p>
+              <h2 className='details-info'>رقم التسجيل بوزارة الزراعة المصرية : {product.registrationNumber } </h2>
+              <p></p>
             </>
           )}
 

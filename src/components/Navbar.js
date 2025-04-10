@@ -7,10 +7,10 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState("#");
 
   const products = [
-    { name: "مبيدات", link: "/pesticides" },
-    { name: "بذور تقاوي", link: "/seeds" },
     { name: "أسمدة", link: "/fertilizers" },
+    { name: "مبيدات", link: "/pesticides" },
     { name: "منظمات نمو", link: "/pgr" },
+    { name: "بذور تقاوي", link: "/seeds" },
   ];
 
   const handleLinkClick = (link) => {

@@ -759,6 +759,9 @@ transition: 0.3s;
 .footer-contact a:hover i{
   transform: scale(1.2);
 }
+.footer-contact a:hover {
+  text-decoration: underline;
+}
 
 .footer-logo {
   flex: 1;
@@ -823,7 +826,7 @@ max-width: 250px;
   margin: auto;
   padding: 20px 5px 20px;
   text-align: center;
-  border-radius: 100px 100px 0 0;
+  border-radius: 20px 20px 0 0;
   transition: 0.3s;
 }
 .footer .developer:hover {
