@@ -8,8 +8,8 @@ const Navbar = () => {
 
   const products = [
     { name: "أسمدة", link: "/fertilizers" },
-    { name: "مبيدات", link: "/pesticides" },
     { name: "منظمات نمو", link: "/pgr" },
+    { name: "مبيدات", link: "/pesticides" },
     { name: "بذور تقاوي", link: "/seeds" },
   ];
 

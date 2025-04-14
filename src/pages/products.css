@@ -107,6 +107,11 @@
 .product-details-page ul li {
   list-style: disc;
   list-style-position: outside;
+  font-weight: 600;
+  color: var(--dark--color);
+}
+.product-details-page p {
+  font-weight: 600;
 }
 
 @media (max-width:1024px) {
@@ -169,7 +174,7 @@
 }
 .product-details-page .details-info{
   color: var(--main--color);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 25px;
 }
 
@@ -179,6 +184,7 @@
   }
   .product-details-page .product-details-text h1{
     width: 100%;
+    font-size: 32px;
   }
   .product-details-page .product-details-image .product-image-link{
     width: 100%;

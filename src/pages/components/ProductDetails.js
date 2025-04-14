@@ -88,7 +88,7 @@ if (!product) {
                 <ul>
                   {Object.entries(product.usageRates).map(([key, value], index) => (
                     <li key={index}>
-                      <span>{key || ''},</span> يضاف بمعدل: {value}
+                      <span>{key || ''}</span>: {value}
                     </li>
                   ))}
                 </ul>
@@ -127,6 +127,14 @@ if (!product) {
               <h2 className='details-info'>فترة ماقبل الحصاد:</h2>
               <ul>
               <li>{product.PHI}</li>
+              </ul>
+            </>
+          )}
+          {product.notes && (
+            <>
+              <h2 className='details-info'>ملحوظة:</h2>
+              <ul>
+              <li>{product.notes}</li>
               </ul>
             </>
           )}

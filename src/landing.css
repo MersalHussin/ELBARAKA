@@ -322,6 +322,10 @@ color: white;
 /* End About Sec */
 
 /* Start Vison Sec */
+.V-M{
+font-size: 32px;
+margin: 5px;
+}
 .vision-section{
   background-color: var(--main--color);
   padding: 100px 20px;

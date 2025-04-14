@@ -18,8 +18,8 @@ function Fertilizers() {
         <h1 className='page-title'>منتجات {Pagefor}</h1>
         <div className='filters'>
           <NavLink to="/fertilizers">الأسمدة</NavLink>
-          <NavLink to="/pesticides">المبيدات</NavLink>
           <NavLink to="/pgr">منظمات النمو</NavLink>
+          <NavLink to="/pesticides">المبيدات</NavLink>
           <NavLink to="/seeds">بذور التقاوي</NavLink>
         </div>
         <div className='products-container'>
