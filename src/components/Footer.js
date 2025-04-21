@@ -33,7 +33,10 @@ function Footer() {
         
     </div>
         <div  className="developer">
-          <a target="_blank" href="http://mersal.top/" rel="noreferrer">تم التطوير والتصميم بواسطة مرسال</a>
+          <a target="_blank" href="http://mersal.top/" rel="noreferrer">
+          تم التطوير والتصميم بواسطة مرسال
+          <br/>
+بالتعاون مع BGS Foundation          </a>
         </div>
 </footer>  )
 }

@@ -10,6 +10,7 @@ import Seeds from "./pages/Seeds";
 import Fertilizers from "./pages/Fertilizers";
 import PGR from "./pages/PGR";
 import ProductDetails from "./pages/components/ProductDetails";
+import AgricultureDate from "./pages/AgricultureDate";
 // 
 const App = () => {
   
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/seeds/:id" element={<ProductDetails />} />
           <Route path="/pgr" element={<PGR />} />
           <Route path="/pgr/:id" element={<ProductDetails />} />
+          <Route path="/agridate" element={<AgricultureDate />} />
         </Routes>
 <Footer/>
     </div>

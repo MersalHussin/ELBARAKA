@@ -323,8 +323,21 @@ color: white;
 
 /* Start Vison Sec */
 .V-M{
-font-size: 32px;
-margin: 5px;
+font-size: 24px;
+margin: 0 0 0 5px;
+font-weight: 900;
+margin-top: 20px;
+}
+.V-M-2{
+background-color: white;
+color: var(--main--color);
+padding: 5px 20px;
+border-radius: 10px 10px 0 0;
+margin: 0 0 0 10px;
+font-size: 30px;
+margin-bottom: 15px;
+display: block;
+width: fit-content;
 }
 .vision-section{
   background-color: var(--main--color);
@@ -390,6 +403,11 @@ z-index: -1;
 color: var(--main--color);
 font-weight: 800;
 font-size: 30px;
+}
+.about-section.timeline .about-txt span span{
+color: var(--main--color);
+font-weight: 800;
+font-size: 15px;
 }
 .about-section.timeline .about-txt p {
 font-size: 20px;
@@ -655,6 +673,8 @@ padding: 50px 20px;
 .FAQ-ul li{
   list-style: disc !important;
   list-style-type: disc !important;
+  margin-bottom: 15px;
+
 }
 
 @media (  width < 1020px ){

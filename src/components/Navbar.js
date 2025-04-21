@@ -27,6 +27,7 @@ const Navbar = () => {
         { id: "#products", element: document.getElementById("products") },
         { id: "#FAQ", element: document.getElementById("FAQ") },
         { id: "#location", element: document.getElementById("location") },
+        { id: "#agridate", element: document.getElementById("agridate") },
       ];
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -113,6 +114,15 @@ const Navbar = () => {
             >
               موقعنا
             </a>
+          </li>
+          <li>
+            <NavLink
+              to="/agridate"
+              className={activeLink === "#agridate" ? "active" : ""}
+              onClick={() => handleLinkClick("#agridate")}
+            >
+              إرشادات
+            </NavLink>
           </li>
         </ul>
         <a

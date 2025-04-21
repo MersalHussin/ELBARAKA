@@ -112,6 +112,7 @@
 }
 .product-details-page p {
   font-weight: 600;
+  color: var(--dark--color);
 }
 
 @media (max-width:1024px) {
@@ -192,4 +193,119 @@
     padding: 15px 20px;
 
   }
+}
+
+/* Table */
+  /* إضافة حاوية للجدول مع خاصية التمرير */
+  .table-container {
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px;
+} 
+  .table-container img {
+    width: 100%;
+    margin-bottom: -22%;
+} 
+.agri-tabel{
+  color: var(--dark--color);
+  font-weight: 600;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    white-space: nowrap; /* منع التفاف النص */
+}
+
+/* عند وضع الجدول داخل الحاوية، نلغي الهامش السفلي */
+.table-container table {
+    margin-bottom: 0;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--main--color);
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0; /* تثبيت العناوين عند التمرير الرأسي */
+    z-index: 1;
+}
+
+.crop-name {
+    background-color: var(--main--color);
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    position: sticky;
+    right: 0; /* تثبيت أسماء المحاصيل عند التمرير الأفقي */
+    z-index: 2; /* طبقة أعلى من العناوين لضمان ظهورها فوق العناوين عند تقاطعهما */
+}
+
+.active-month {
+    background-color: yellow;
+}
+
+.table-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--main--color);
+}
+
+/* مؤشر التمرير */
+.scroll-indicator {
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #666;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* إظهار مؤشر التمرير على الشاشات الصغيرة فقط */
+@media screen and (max-width: 992px) {
+    .scroll-indicator {
+        display: block;
+    }
+}
+
+/* تعديلات للشاشات الصغيرة */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 5px;
+    }
+    
+    th, td {
+        padding: 4px;
+        font-size: 12px;
+    }
 }

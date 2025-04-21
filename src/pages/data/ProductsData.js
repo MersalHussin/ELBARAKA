@@ -2,7 +2,10 @@ export const fertilizersData = [
   {
     id:1,
     name: "جرين ماس",
+    comp:"W/W",
+    cat:"أسمدة",
     img:"/assets/Products/1.webp",
+
     composition: {
       "نيتروجين كلي (N₂O)": "19%",
       "فوسفور (P₂O₅)": "19%",
@@ -25,6 +28,9 @@ export const fertilizersData = [
   {
     id:2,
     name: "جرين ماس VIP",
+    comp:"W/W",
+
+    cat:"أسمدة",
     img:"/assets/Products/2.webp",
 
     composition: {
@@ -44,7 +50,7 @@ export const fertilizersData = [
     ],
     usageRates: {
       "التسميد الأرضي": "2-4 لتر / فدان",
-      "الرش الورقي": "150-250 سم/100 لتر ماء"
+      "الرش الورقي": "150-250 سم³ / 100 لتر ماء"
     },
     mixing: "يقبل الخلط مع معظم أنواع الأسمدة والمبيدات ماعدا المركبات التي تحتوي علي الكالسيوم والنحاس والمحاليل ذات الوسط القلوي ويفضل عمل تجربة قبل الخلط .",
     registrationNumber: "5836 / 1"
@@ -52,6 +58,9 @@ export const fertilizersData = [
   {
     id:3,
     name: "ملجراند ماب",
+    comp:"W/W",
+    cat:"أسمدة",
+
     img:"/assets/Products/3.webp",
     composition: {
       "نيتروجين (N)": "12%",
@@ -77,7 +86,11 @@ export const fertilizersData = [
   {
     id:4,
     name: "ميثوفاك",
+    comp:"W/W",
+
+    cat:"أسمدة",
     img:"/assets/Products/4.webp",
+
     composition: {
       "نيتروجين (N₂O)": "10%",
       "فوسفور (P₂O₅)": "5%",
@@ -102,6 +115,9 @@ export const fertilizersData = [
   {
     id:5,
     name: "جولدن فاك",
+    comp:"W/V",
+    cat:"أسمدة",
+
     img:"/assets/Products/5.webp",
     composition: {
       "فوسفور (P₂O₅)": "33%",
@@ -129,6 +145,9 @@ export const fertilizersData = [
   {
     id:6,
     name: "جراند سايز",
+    comp:"W/V",
+    cat:"أسمدة",
+
     img:"/assets/Products/6.webp",
     composition: {
       "بوتاسيوم (K₂O)": "36%",
@@ -148,7 +167,8 @@ export const fertilizersData = [
       "المحاصيل الحقلية (ارز-ذرة-قمح-فول-قطن)": "500 سم / 200 لتر ماء",
       "البيوت المحمية والصوب": "500 سم / 200 لتر ماء",
       "الأشجار المثمرة والفاكهة": "500 سم / 200 لتر ماء",
-      "التسميد الأرضي": "يمكن استخدام جراند سايز 2 لتر / فدان حقنًا مع ماء الري" 
+      "الرش الورقي": "500 سم / 200 لتر ماء",
+      "كما يمكن": " استخدام جراند سايز 2 لتر / فدان حقنًا مع ماء الري" 
     },
     mixing:"قابل للخلط مع جميع الأسمدة والمبيدات فيما عدا المركبات الفسفورية حامضية التأثير و يفضل إجراء تجربة قبل الخلط . و يفصل إضافة جراند سايز الي الماء اولا في حالة الخلط ثم اضافة الاسمدة والمبيدات المراد استخدامها ويفضل رشه فى الصباح الباكر او في المساء ",
     registrationNumber: "10666"
@@ -156,6 +176,9 @@ export const fertilizersData = [
   {
     id:7,
     name: "ملجراند نتروكال",
+    comp:"W/W",
+    cat:"أسمدة",
+
     img:"/assets/Products/7.webp",
     composition: {
       "نيتروجين (N)": "15.5%",
@@ -169,13 +192,16 @@ export const fertilizersData = [
       "يعمل على تنشيط الأنسجة المريستيمية في القمم النامية كما يشجع نمو وامتداد الجذور وخصوصا الشعيرات الجذرية.",
       "يساعد في الحفاظ على بنية التربة ؛ لأنه يقلل من خطر التملح وتفكك التربة، خاصة عند استخدام المياه المالحة للري .",
     ],
-    usageRates:  "2-3 كجم/فدان",
+    usageRates:  "2-3 كجم/فدان لجميع أنواع المحاصيل ",
     mixing: "يقبل الخلط مع معظم أنواع الأسمدة والمبيدات ماعدا الفوسفات والكبريت، ويفضل التجربة قبل الخلط.",
     registrationNumber: "27093"
   },
   {
     id:8,
     name: "هيومي مارك",
+    comp:"W/W",
+    cat:"أسمدة",
+
     img:"/assets/Products/8.webp",
     composition: {
       "بوتاسيوم (K₂O)": "10% (مصدره هيومات بوتاسيوم)"
@@ -198,6 +224,9 @@ export const fertilizersData = [
   {
     id:9,
     name: "فوسفوريك البركة 85 ",
+    comp:"W/V",
+    cat:"أسمدة",
+
     img:"/assets/Products/9.webp",
     composition: {
       "حامض الفوسفوريك (H₃PO₄)": "85%"
@@ -218,6 +247,9 @@ export const fertilizersData = [
   {
     id:10,
     name: "هانفوهيوميت",
+    comp:"W/W",
+    cat:"أسمدة",
+
     img:"/assets/Products/10.webp",
     composition: {
       "بوتاسيوم (K₂O)": "12% (مصدره هيومات بوتاسيوم 85%)"
@@ -239,12 +271,9 @@ export const fertilizersData = [
   {
     id:11,
     name: "بي كال جي",
+    cat:"أسمدة",
+
     img:"/assets/Products/11.webp",
-    composition: {
-      "ماغنيسيوم (Mg)": "3%",
-      "بورون (B)": "0.5%",
-      "كالسيوم (Ca)": "9%"
-    },
     features: [
       "تركيبة فريدة تحتوي على الكالسيوم والماغنيسيوم والبورون بنسب متوازنة تضمن سرعة الامتصاص والانتقال داخل النبات ",
       "يقلل بي كال جي من ظاهرة القلب الأجوف والتشققات في البطاطس والبنجر",
@@ -258,19 +287,19 @@ export const fertilizersData = [
     usageRatesExtra: {
       "الخضروات": {
         "الرش الورقي": "150-250 سم³ / 100 لتر",
-        "التسميد": "1.5 لتر/فدان"
+        "التسميد": "1.5 لتر/فدان حقنا مع ماء الري"
       },
       "القرعيات": {
         "الرش الورقي": "150-250 سم³ / 100 لتر",
-        "التسميد": "1.5 لتر/فدان"
+        "التسميد": "1.5 لتر/فدان حقنا مع ماء الري"
       },
       "محاصيل الحبوب": {
         "الرش الورقي": "150-250 سم³ / 100 لتر",
-        "التسميد": "1.5 لتر/فدان"
+        "التسميد": "1.5 لتر/فدان حقنا مع ماء الري"
       },
       "أشجار الفاكهة": {
         "الرش الورقي": "150-250 سم³ / 100 لتر",
-        "التسميد": "1.5 لتر/فدان"
+        "التسميد": "1.5 لتر/فدان حقنا مع ماء الري"
       }
     },
     mixing: "لا يخلط مع مركبات النحاس والمبيدات الفسفورية.",
@@ -279,6 +308,9 @@ export const fertilizersData = [
   {
     id:12,
     name: "بروفاك",
+    comp:"W/V",
+    cat:"أسمدة",
+
     img:"/assets/Products/12.webp",
     composition: {
       "بورون (B)": "15% (مصدره بورون إيثانول أمين)"
@@ -300,6 +332,9 @@ export const fertilizersData = [
   {
     id:13,
     name: "ميكرو كومبي 2",
+    comp:"W/W",
+    cat:"أسمدة",
+
     img:"/assets/Products/13.webp",
     composition: {
       "زنك (Zn)": "3%",
@@ -331,6 +366,9 @@ export const pgrsData = [
   {
     id: 1,
     name: "فيرو روكيت",
+    comp:"W/V",
+    cat:"منظمات النمو",
+
     img:"/assets/Products/ن1.webp",
     composition: {
       "جبريلك اسيد (GA3)": "1.35%",
@@ -357,6 +395,9 @@ export const pgrsData = [
   {
     id: 2,
     name: "جبر سنت",
+    comp:"W/W",
+    cat:"منظمات النمو",
+
     img:"/assets/Products/ن2.webp",
     composition: {
       "جبريلك أسيد (GA3)": "10%"
@@ -408,9 +449,12 @@ export const pesticidesData = [
   {
     id: 1,
     name: "الترابروك 5.7%",
+    comp:"W/W",
+    cat:"مبيدات",
+
     img:"/assets/Products/م1.webp",
     composition: {
-      "إمامكتين بنزوات": "5.7% (W/W)"
+      "إمامكتين بنزوات": "5.7%"
     },
     features: [
     "الترابروك مبيد حشري اختياري ليس جهازي في صورة حبيبات قابلة للبلل حيث يعمل عن طريق الملامسة وكسم معدي ",
@@ -428,10 +472,13 @@ export const pesticidesData = [
   {
     id: 2,
     name: "الترامون 48%",
+    comp:"W/V",
+    cat:"مبيدات",
+
     img:"/assets/Products/م2.webp",
     composition: {
-      "أزوكسي ستروبين": "8% (W/V)",
-      "كلورثالونيل": "40% (W/V)"
+      "أزوكسي ستروبين": "8%",
+      "كلورثالونيل": "40%"
     },
     features: [
       "الترامون مبيد فطري وقائى علاجى وجهازى يتكون من مادتين فعاليتين في صورة مركز معلق",
@@ -448,9 +495,12 @@ export const pesticidesData = [
   {
     id: 3,
     name: "التراشوت 24%",
+    comp:"W/V",
+    cat:"مبيدات",
+
     img:"/assets/Products/م3.webp",
     composition: {
-      "أوكسي فلورفين": "24% (W/V)"
+      "أوكسي فلورفين": "24%"
     },
     features: [
       "التراشوت مبيد عشبي في صورة مركز قابل للاستحلاب",
@@ -470,9 +520,12 @@ export const pesticidesData = [
   {
     id: 4,
     name: "التراسينا 48%",
+    comp:"W/V",
+    cat:"مبيدات",
+
     img:"/assets/Products/م4.webp",
     composition: {
-      "جليفوسيت ايزوبروبيل أمونيوم": "48% (W/V)"
+      "جليفوسيت ايزوبروبيل أمونيوم": "48%"
     },
     features: [
       "1.	الترا سينا ، مبيد حشائش جهازى عام غير إختيارى",
@@ -495,21 +548,28 @@ export const seedsData = [
   {
     id: 1,
     name: "أرز أصناف مختلفة",
+    cat:"بذور",
     img:"/assets/Products/ب1.webp",
   },
   {
     id: 2,
     name: "قمح أصناف مختلفة",
+    cat:"بذور",
+
     img:"/assets/Products/ب2.webp",
   },
   {
     id: 3,
     name: "فول أصناف مختلفة ",
+    cat:"بذور",
+
     img:"/assets/Products/ب3.webp",
   },
   {
     id: 4,
     name: "برسيم مصري بلدي",
+    cat:"بذور",
+
     img:"/assets/Products/ب4.webp",
   }
 ];
